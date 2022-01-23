@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<mapnames>
+	<group name="Novodmitrovsk" pos="11339.769531 0.0 14391.049805"/>
+	<group name="Novoselki" pos="6115.910156 0.0 3256.360107"/>
+	<group name="Dubovo" pos="6754.509766 0.0 3595.257080"/>
+	<group name="Vysotovo" pos="5701.240234 0.0 2556.110107"/>
+	<group name="Zelenogorsk" pos="2796.000000 0.0 5166.000000"/>
+	<group name="Berezino" pos="12372.382813 0.0 9760.981445"/>
+	<group name="Elektrozavodsk" pos="10286.679688 0.0 1992.770020"/>
+	<group name="Novaya Petrovka" pos="3477.168945 0.0 12931.243164"/>
+	<group name="Gorka" pos="9524.000000 0.0 8945.000000"/>
+	<group name="Solnichniy" pos="13487.723633 0.0 6225.883789"/>
+	<group name="Stary Sobor" pos="6114.000000 0.0 7849.000000"/>
+	<group name="Vybor" pos="3909.831055 0.0 9019.614258"/>
+	<group name="Severograd" pos="8168.483887 0.0 12573.601563"/>
+	<group name="Bor" pos="3316.406006 0.0 4070.966064"/>
+	<group name="Svetlojarsk" pos="13989.740234 0.0 13263.780273"/>
+	<group name="Krasnostav" pos="11203.166992 0.0 12340.807617"/>
+	<group name="Chernaya Polyana" pos="12158.540039 0.0 13770.219727"/>
+	<group name="Polana" pos="10794.000000 0.0 8160.000000"/>
+	<group name="Tulga" pos="12768.000000 0.0 4384.000000"/>
+	<group name="Msta" pos="11333.790039 0.0 5421.399902"/>
+	<group name="Staroye" pos="10212.519531 0.0 5385.049805"/>
+	<group name="Shakovka" pos="9728.639648 0.0 6567.299805"/>
+	<group name="Dolina" pos="11285.169922 0.0 6633.580078"/>
+	<group name="Orlovets" pos="12250.000000 0.0 7253.000000"/>
+	<group name="Novy Sobor" pos="7123.629883 0.0 7774.629883"/>
+	<group name="Kabanino" pos="5300.709961 0.0 8645.900391"/>
+	<group name="Mogilevka" pos="7650.410156 0.0 5096.459961"/>
+	<group name="Nadezhdino" pos="5894.000000 0.0 4780.000000"/>
+	<group name="Guglovo" pos="8445.000000 0.0 6579.000000"/>
+	<group name="Kamyshovo" pos="12170.000000 0.0 3458.000000"/>
+	<group name="Pusta" pos="9197.000000 0.0 3873.000000"/>
+	<group name="Dubrovka" pos="10324.298828 0.0 9888.237305"/>
+	<group name="Upper Dubrovka" pos="9926.823242 0.0 10468.918945"/>
+	<group name="Khelm" pos="12329.269531 0.0 10771.009766"/>
+	<group name="Olsha" pos="13402.000000 0.0 12898.000000"/>
+	<group name="Gvozdno" pos="8644.750977 0.0 11934.115234"/>
+	<group name="Grishino" pos="5980.000000 0.0 10257.000000"/>
+	<group name="Rogovo" pos="4802.000000 0.0 6748.000000"/>
+	<group name="Pogorevka" pos="4445.000000 0.0 6322.000000"/>
+	<group name="Pustoshka" pos="3137.944092 0.0 7890.924805"/>
+	<group name="Kozlovka" pos="4402.000000 0.0 4736.000000"/>
+	<group name="Karmanovka" pos="12700.627930 0.0 14691.311523"/>
+	<group name="Balota" pos="4527.580078 0.0 2465.320068"/>
+	<group name="Komarovo" pos="3702.000000 0.0 2440.000000"/>
+	<group name="Kamenka" pos="1981.000000 0.0 2207.000000"/>
+	<group name="Myshkino" pos="2048.000000 0.0 7258.000000"/>
+	<group name="Pavlovo" pos="1693.979980 0.0 3858.649902"/>
+	<group name="Lopatino" pos="2801.000000 0.0 10029.000000"/>
+	<group name="Vyshnoye" pos="6629.000000 0.0 6051.000000"/>
+	<group name="Prigorodki" pos="7760.000000 0.0 3336.000000"/>
+	<group name="Drozhino" pos="3374.000000 0.0 4861.000000"/>
+	<group name="Sosnovka" pos="2556.000000 0.0 6307.000000"/>
+	<group name="Nizhnoye" pos="12824.879883 0.0 8097.700195"/>
+	<group name="Pulkovo" pos="5015.000000 0.0 5607.000000"/>
+	<group name="Berezhki" pos="15020.000000 0.0 13905.000000"/>
+	<group name="Turovo" pos="13630.000000 0.0 14146.000000"/>
+	<group name="Belaya Polyana" pos="14166.000000 0.0 14968.000000"/>
+	<group name="Karmanovka" pos="12996.000000 0.0 15066.000000"/>
+	<group name="Nagornoe" pos="9286.000000 0.0 14677.000000"/>
+	<group name="Svergino" pos="9493.519531 0.0 13875.269531"/>
+	<group name="Ratnoe" pos="6195.877930 0.0 12761.801758"/>
+	<group name="Kamensk" pos="6748.741211 0.0 14430.045898"/>
+	<group name="Krasnoe" pos="6411.374023 0.0 15029.960938"/>
+	<group name="Stary Yar" pos="4987.859863 0.0 14992.975586"/>
+	<group name="Polesovo" pos="5955.736816 0.0 13558.045898"/>
+	<group name="Tisy" pos="3441.649902 0.0 14799.549805"/>
+	<group name="Topolniki" pos="2913.745117 0.0 12366.357422"/>
+	<group name="Zaprudnoye" pos="5214.000000 0.0 12792.000000"/>
+	<group name="Sinystok" pos="1538.277954 0.0 11904.578125"/>
+	<group name="Vavilovo" pos="2263.000000 0.0 11103.000000"/>
+	<group name="Kumyrna" pos="8300.000000 0.0 6054.000000"/>
+	<group name="Kalinovka" pos="7448.000000 0.0 13406.000000"/>
+	<group name="Bogatyrka" pos="1453.619995 0.0 8870.919922"/>
+	<group name="St. Romanovsky Ski Resort" pos="638.000000 0.0 11667.000000"/>
+	<group name="SKWSCH Biathlon Arena" pos="357.000000 0.0 11142.000000"/>
+	<group name="Zvir" pos="577.330017 0.0 5317.419922"/>
+	<group name="Zabolotye" pos="1256.859009 0.0 9993.259766"/>
+	<group name="Galkino" pos="1102.680054 0.0 8798.269531"/>
+	<group name="Arsenovo" pos="8509.661133 0.0 13918.627930"/>
+	<group name="Stroytel" pos="7017.629883 0.0 4365.209961"/>
+	<group name="Romashka" pos="8177.602051 0.0 10980.289063"/>
+	<group name="Kometa" pos="10271.697266 0.0 3558.228027"/>
+	<group name="Druzhba" pos="11437.000000 0.0 10695.000000"/>
+	<group name="Nadezhda" pos="7279.967773 0.0 7014.350098"/>
+	<group name="Youth Pioneer" pos="11155.825195 0.0 7074.143066"/>
+	<group name="Proud Chernarus" pos="3199.616943 0.0 6174.932129"/>
+	<group name="Shkolnik" pos="14856.502930 0.0 14571.028320"/>
+	<group name="Pobeda" pos="3703.382080 0.0 14876.383789"/>
+	<group name="Metalurg" pos="1035.406006 0.0 6677.382813"/>
+	<group name="Green Mountain" pos="3767.169922 0.0 6010.540039"/>
+	<group name="Dichina" pos="4618.000000 0.0 7821.000000"/>
+	<group name="Novy Lug" pos="9251.000000 0.0 11360.000000"/>
+	<group name="Staryeluga" pos="6919.000000 0.0 8995.000000"/>
+	<group name="Vysota" pos="6591.629883 0.0 3400.000000"/>
+	<group name="Kopyto" pos="7871.479004 0.0 3869.102051"/>
+	<group name="Grubyeskaly" pos="13115.059570 0.0 11900.000000"/>
+	<group name="Black Forest" pos="9031.000000 0.0 7803.000000"/>
+	<group name="Altar" pos="8143.399902 0.0 9159.679688"/>
+	<group name="Zenit Radio" pos="8080.009766 0.0 9341.679688"/>
+	<group name="Pik Kozlova" pos="8850.169922 0.0 2880.530029"/>
+	<group name="Pustoy Khrebet" pos="10890.000000 0.0 5665.000000"/>
+	<group name="Tower" pos="4178.270020 0.0 11771.219727"/>
+	<group name="Bashnya" pos="4440.169922 0.0 8070.540039"/>
+	<group name="Kurgan" pos="3368.520020 0.0 5296.870117"/>
+	<group name="Kustryk" pos="4912.879883 0.0 5063.450195"/>
+	<group name="Vetryanayagora" pos="3892.739990 0.0 4200.589844"/>
+	<group name="Kalmyk" pos="6903.779785 0.0 4919.660156"/>
+	<group name="Pop Ivan" pos="6420.259766 0.0 6570.660156"/>
+	<group name="Erbenka" pos="2842.916016 0.0 4014.811035"/>
+	<group name="Lesnoy Khrebet" pos="8122.770020 0.0 7815.540039"/>
+	<group name="Vysoky Kamen" pos="8940.190430 0.0 4380.520020"/>
+	<group name="Dobryy" pos="10552.900391 0.0 3061.030029"/>
+	<group name="Baranchik" pos="10153.147461 0.0 6208.520996"/>
+	<group name="Malinovka" pos="10897.700195 0.0 7575.589844"/>
+	<group name="Dubina" pos="11107.900391 0.0 8474.830078"/>
+	<group name="Klen" pos="11473.510742 0.0 11315.392578"/>
+	<group name="Black Mountain" pos="10280.816406 0.0 12053.927734"/>
+	<group name="Zolotar" pos="10179.000000 0.0 11998.000000"/>
+	<group name="Ostry" pos="10792.747070 0.0 12829.503906"/>
+	<group name="Olsha" pos="12975.700195 0.0 12775.200195"/>
+	<group name="Tikhiyzaliv" pos="1221.489990 0.0 2111.889893"/>
+	<group name="Mutnyizaliv" pos="5735.479004 0.0 1918.920044"/>
+	<group name="Chernyzaliv" pos="7599.068848 0.0 2486.585938"/>
+	<group name="Zelenyzaliv" pos="11227.018555 0.0 2989.837891"/>
+	<group name="Skalisty Proliv" pos="13385.919922 0.0 3613.939941"/>
+	<group name="Nivhniyzaliv" pos="12989.299805 0.0 8515.759766"/>
+	<group name="Zaliv Guba" pos="14328.374023 0.0 13136.732422"/>
+	<group name="Rify" pos="13931.730469 0.0 11288.610352"/>
+	<group name="Willow Lake" pos="13248.000000 0.0 11572.000000"/>
+	<group name="Black Lake" pos="13381.000000 0.0 12002.000000"/>
+	<group name="Topolka Dam" pos="10231.330078 0.0 3691.149902"/>
+	<group name="Pobeda Dam" pos="9928.293945 0.0 13874.642578"/>
+	<group name="Plotina Tishina" pos="1150.819946 0.0 6432.454102"/>
+	<group name="Ozerko" pos="6777.629883 0.0 4492.419922"/>
+	<group name="Prud" pos="6610.979980 0.0 9308.570313"/>
+	<group name="Devil's castle" pos="6883.238770 0.0 11501.288086"/>
+	<group name="Zub" pos="6574.279785 0.0 5573.850098"/>
+	<group name="Rog" pos="11267.206055 0.0 4293.036133"/>
+	<group name="Grozovoy Pass" pos="3318.120117 0.0 15250.549805"/>
+	<group name="Pass Sosnovy" pos="2687.399902 0.0 6590.279785"/>
+	<group name="Pass Oreshka" pos="9822.191406 0.0 6088.792969"/>
+	<group name="Turovskiypereval" pos="14674.241211 0.0 14089.305664"/>
+	<group name="Three Valleys" pos="12764.469727 0.0 5412.209961"/>
+	<group name="Grozoyvedoly" pos="10403.982422 0.0 14793.167969"/>
+	<group name="Klyuch" pos="9282.570313 0.0 13476.669922"/>
+	<group name="lysayagora" pos="6722.458984 0.0 14050.419922"/>
+	<group name="Blubokoyeozero" pos="1692.555054 0.0 14821.565430"/>
+	<group name="Skalka" pos="5758.000000 0.0 14486.000000"/>
+	<group name="Vidy" pos="785.054016 0.0 14398.815430"/>
+	<group name="Tumannyverkh" pos="331.223999 0.0 12982.990234"/>
+	<group name="Adamovka" pos="5340.660156 0.0 11380.009766"/>
+	<group name="Shishok" pos="3559.312988 0.0 9422.269531"/>
+	<group name="Skalisty" pos="13715.454102 0.0 3118.780029"/>
+	<group name="Storozh" pos="2816.601074 0.0 1277.959961"/>
+	<group name="Cap Golova" pos="8286.052734 0.0 2405.597900"/>
+	<group name="Drakon" pos="11191.000000 0.0 2443.000000"/>
+	<group name="Otmel" pos="11581.250000 0.0 3213.239990"/>
+	<group name="Krutoy Cap" pos="13578.190430 0.0 3976.820068"/>
+	<group name="Tokarnya" pos="8890.477539 0.0 5672.553223"/>
+	<group name="Ostrog" pos="2655.733887 0.0 2264.632080"/>
+	<group name="Maryanka" pos="2789.000000 0.0 3386.000000"/>
+	<group name="Polonina" pos="1004.486023 0.0 4242.869141"/>
+	<group name="Kalinka" pos="3346.500000 0.0 11292.096680"/>
+	<group name="Kikimora" pos="1812.000000 0.0 6200.000000"/>
+	<group name="Bolshoy Kotel" pos="714.648987 0.0 6520.431152"/>
+	<group name="Simurg" pos="134.000000 0.0 7569.990234"/>
+	<group name="Volchiypik" pos="320.253998 0.0 2719.269043"/>
+	<group name="Krona" pos="1493.000000 0.0 9270.339844"/>
+	<group name="Tri Kresta" pos="301.000000 0.0 9478.000000"/>
+	<group name="Rostoki" pos="744.450012 0.0 8647.860352"/>
+	<group name="Orlye Ozero" pos="597.000000 0.0 5990.000000"/>
+	<group name="Makosh" pos="7849.720215 0.0 6480.189941"/>
+	<group name="Klenovyipereval" pos="10862.702148 0.0 11585.511719"/>
+	<group name="Zmeinykhrebet" pos="11446.169922 0.0 13606.919922"/>
+	<group name="Falcon" pos="12001.000000 0.0 14813.000000"/>
+	<group name="Sokoi" pos="14880.629883 0.0 13671.759766"/>
+	<group name="Bogat" pos="7058.011230 0.0 12023.571289"/>
+	<group name="Dubnik" pos="3298.290039 0.0 10330.889648"/>
+	<group name="Viselitsa" pos="12722.157227 0.0 7504.049805"/>
+	<group name="Dazhbog" pos="6581.000000 0.0 8590.000000"/>
+	<group name="Verbnik" pos="4414.878906 0.0 9103.001953"/>
+	<group name="Medvezhilugi" pos="9641.000000 0.0 13236.000000"/>
+	<group name="Voron" pos="13517.929688 0.0 3311.245117"/>
+	<group name="Gnomovzamok" pos="7446.915039 0.0 9097.169922"/>
+	<group name="Glaza" pos="7383.000000 0.0 9320.000000"/>
+	<group name="Karer Krasnaya Zarya" pos="8565.348633 0.0 13418.683594"/>
+	<group name="Matveyevo" pos="4281.000000 0.0 7380.000000"/>
+	<group name="Kotka" pos="5873.700195 0.0 6883.240234"/>
+	<group name="Chernyeskaly" pos="3932.572021 0.0 14599.496094"/>
+	<group name="Svyatoy Roman" pos="84.832001 0.0 11901.246094"/>
+	<group name="Koman" pos="1660.651978 0.0 7415.661133"/>
+	<group name="Mayak" pos="12323.813477 0.0 4553.106934"/>
+	<group name="Vybor Military Outpost" pos="4497.000000 0.0 8291.000000"/>
+	<group name="Tisy Military Base" pos="1570.000000 0.0 14069.000000"/>
+	<group name="Kamensk Military Base" pos="7838.812012 0.0 14704.823242"/>
+	<group name="Zeleno Military Base" pos="2410.375000 0.0 5133.681152"/>
+	<group name="Pavlovo Military Base" pos="2016.000000 0.0 3408.000000"/>
+	<group name="Balota Airfield" pos="5082.030762 0.0 2376.327881"/>
+	<group name="Krasno Airfield" pos="12100.680664 0.0 12573.896484"/>
+	<group name="Vybor Airfield" pos="4428.000000 0.0 10179.000000"/>
+</mapnames>
