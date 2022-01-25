@@ -13,6 +13,7 @@ namespace parseXML_DayZ
         List<string> unique_model_name_list = new List<string>(); // a list of all unique model names for different uses
 
         List<map_group> map_list = new List<map_group>(); // this will hold the parsed data
+
         //List<string> unique_map_name_list = new List<string>(); // a list of all unique town/city/misc names for different uses
 
         class single_group
@@ -52,29 +53,7 @@ namespace parseXML_DayZ
 
         private void RADIUSTESTINGAREA()
         {
-            //bcoord = bcoordx & bcoordy
-            //mcoord = mcoordx & mcoordy
-            //bool maptracex = false
-            //bool maptracey = false
-            
-            //foreach ()
 
-            //    if(bcoordx + 100 <= mcoordx) && (bcoordx - 100 <= mcoordx)
-            //    {
-            //        maptracex = true;
-            //    }
-            //    else
-            //    {
-            //        maptracex =false;
-            //    } 
-            //    if(bcoordy + 100 <= mcoordy) && (bcoordy - 100 <= mcoordy2)
-            //    {
-            //        maptracey = true;
-            //    }
-            //    else
-            //    {
-            //        maptracey=false; 
-            // 
         }
 
         private void parseXmlFileLinq()
@@ -93,10 +72,7 @@ namespace parseXML_DayZ
             if (map_list.Count > 0)                                         //    New Code         
             {                                                               //
                 map_list.Clear();                                           //
-                //unique_map_name_list.Clear();                               //
-               //unique_map_name_list = new List<string>();                   // 
                 map_list = new List<map_group>();                        //      
-                //cbALLUNIQUEMAPENTRIES.Items.Clear();                           //
                                                                             //
             }
 
@@ -138,15 +114,8 @@ namespace parseXML_DayZ
 
                 // build our group list array in memory of all entries in the xml file
                 group_list.Add(temp_group);
-                //txtOUTPUT.AppendText("Name = " + ga.Attribute("name").Value + "\r\n");
-                //txtOUTPUT.AppendText("pos = "  + ga.Attribute("pos").Value  + "\r\n");
-                //txtOUTPUT.AppendText("rpy = "  + ga.Attribute("rpy").Value  + "\r\n");
-                //txtOUTPUT.AppendText("a = "    + ga.Attribute("a").Value    + "\r\n");
+
             }
-
-
-            ////////////////////////////////////////////////////////////////////////////////////////
-
             foreach (var ma in mgroup_attr)
             {
 
@@ -156,26 +125,16 @@ namespace parseXML_DayZ
                 map_list.Add(temp_mgroup);
 
             }
-
-            ////////////////////////////////////////////////////////////////////////////////////////
-
-
             // sort them alphabetically then populate the combo box with it
             unique_model_name_list.Sort();
             for (int i = 0; i < unique_model_name_list.Count; i++)
             {
                 cbALLUNIQUEENTRIES.Items.Add(unique_model_name_list[i]);
             }
-
-
-            /////////////////////////////////////////////////////////////////////////////////////
             for (int p = 0; p < map_list.Count; p++)
             {
                 cbALLUNIQUEMAPENTRIES.Items.Add(map_list[p].mapname);
             }
-            /////////////////////////////////////////////////////////////////////////////////////
-            
-
             txtOUTPUT.AppendText("Total unique group names added: " + unique_model_name_list.Count + "\r\n");
             txtOUTPUT.AppendText("Total unique map names added: " + map_list.Count + "\r\n");
         }
@@ -378,27 +337,67 @@ namespace parseXML_DayZ
 
             string firstline = "if ( MBuilding == \"" + cbALLUNIQUEENTRIES.SelectedItem.ToString().Trim() + "\" )\r\n{\r\n";
             full_output.Add(firstline);
+            string currentmodel = cbALLUNIQUEENTRIES.SelectedItem.ToString();
+            string currenttown = cbALLUNIQUEMAPENTRIES.SelectedItem.ToString();
+            bool found = false;
+
+            if (!int.TryParse(txtRADIUS.Text, out int radius))
+            {
+                txtOUTPUT.AppendText("\r\n^----^ QUIT FUCKING AROUND!!!!");
+                return;
+            }
 
             int placeholder_count = 0;
             for (int i = 0; i < group_list.Count; ++i)
             {
                 if (group_list[i].name == cbALLUNIQUEENTRIES.SelectedItem.ToString())
                 {
-                    placeholder_count += 1;
-                    if(placeholder_count == 1)
+                    List<double> model_coords = new List<double>();
+                    model_coords = splitXYZ(group_list[i].pos);
+                    double model_x = model_coords[0];
+                    double model_z = model_coords[1];
+                    double model_y = model_coords[2];
+
+                    foreach (var town in map_list)
                     {
-                        string curr_line = "    if ( MLocation == \"PLACEHOLDER" + placeholder_count.ToString() + "\" )          BuildingPosList.Insert(\"" + group_list[i].pos + "\");\r\n";
-                        full_output.Add(curr_line);
+                        if (town.mapname == currenttown)
+                        {
+                            //txtOUTPUT.AppendText("\r\nCurrently Selected Town: " + currentmodel + "Found" );
+                            //txtOUTPUT.AppendText("\r\nFor Model " + model.name + " X = " + model_x + " Z = " + model_z + " Y = " + model_y);
+
+                            List<double> map_coords = splitXYZ(town.mappos);
+                            double map_x = map_coords[0];
+                            double map_z = map_coords[1];
+                            double map_y = map_coords[2];
+
+                            string found_city = "";
+
+                            if (((map_x < model_x + radius) && (map_x > model_x - radius)) && ((map_y < model_y + radius) && (map_y > model_y - radius)))
+                            {
+                                found_city = town.mapname;
+                                found = true;
+
+                                placeholder_count += 1;
+                                if (placeholder_count == 1)
+                                {
+                                    string curr_line = "    if ( MLocation == \"" + found_city + "\" )          BuildingPosList.Insert(\"" + group_list[i].pos + "\");\r\n";
+                                    full_output.Add(curr_line);
+                                }
+                                else
+                                {
+                                    string curr_line = "    else if ( MLocation == \"" + found_city + "\" )     BuildingPosList.Insert(\"" + group_list[i].pos + "\");\r\n";
+                                    full_output.Add(curr_line);
+                                }
+
+                            }
+                        }
                     }
-                    else
-                    {
-                        string curr_line = "    else if ( MLocation == \"PLACEHOLDER" + placeholder_count.ToString() + "\" )   BuildingPosList.Insert(\"" + group_list[i].pos + "\");\r\n";
-                        full_output.Add(curr_line);
-                    }
+
                 }
             }
 
-            if(placeholder_count > 0)
+
+            if (placeholder_count > 0)
             {
                 string end_line = "    else return false;  // no match for MLocation\r\n}\r\n\r\n";
                 full_output.Add(end_line);
@@ -406,9 +405,9 @@ namespace parseXML_DayZ
 
             // print code to textbox
             // (can also use this to output to file)
-            for(int i = 0; i < full_output.Count; ++i)
+            for (int ij = 0; ij < full_output.Count; ++ij)
             {
-                txtOUTPUT.AppendText(full_output[i]);
+                txtOUTPUT.AppendText(full_output[ij]);
             }
         }
 
@@ -417,6 +416,12 @@ namespace parseXML_DayZ
             if (group_list.Count <= 0)
             {
                 txtOUTPUT.AppendText("\r\n[ERROR] XML NOT LOADED\r\n");
+                return;
+            }
+
+            if (!int.TryParse(txtRADIUS.Text, out int radius))
+            {
+                txtOUTPUT.AppendText("\r\n^----^ QUIT FUCKING AROUND!!!!");
                 return;
             }
 
@@ -446,16 +451,51 @@ namespace parseXML_DayZ
                 {
                     if(group_list[i].name == unique_model_name_list[j])
                     {
+
+                        List<double> model_coords = new List<double>();
+                        model_coords = splitXYZ(group_list[i].pos);
+                        double model_x = model_coords[0];
+                        double model_z = model_coords[1];
+                        double model_y = model_coords[2];
+
                         minor_count += 1;
                         if (minor_count == 1)
                         {
-                            curr_line = "    if ( MLocation == \"PLACEHOLDER" + minor_count.ToString() + "\" )          BuildingPosList.Insert(\"" + group_list[i].pos + "\");";
-                            full_output.Add(curr_line);
+                            string townname = "";
+                            foreach (var town in map_list)
+                            {
+                                List<double> map_coords = splitXYZ(town.mappos);
+                                double map_x = map_coords[0];
+                                double map_z = map_coords[1];
+                                double map_y = map_coords[2];
+
+                                if (((map_x < model_x + radius) && (map_x > model_x - radius)) && ((map_y < model_y + radius) && (map_y > model_y - radius)))
+                                {
+                                    townname = town.mapname;
+                                    curr_line = "    if ( MLocation == \"" + townname + "\" )          BuildingPosList.Insert(\"" + group_list[i].pos + "\");";
+                                    full_output.Add(curr_line);
+                                    break;
+                                }
+                            }
                         }
                         else
                         {
-                            curr_line = "    else if ( MLocation == \"PLACEHOLDER" + minor_count.ToString() + "\" )   BuildingPosList.Insert(\"" + group_list[i].pos + "\");";
-                            full_output.Add(curr_line);
+                            string townname = "";
+                            foreach (var town in map_list)
+                            {
+                                List<double> map_coords = splitXYZ(town.mappos);
+                                double map_x = map_coords[0];
+                                double map_z = map_coords[1];
+                                double map_y = map_coords[2];
+
+                                if (((map_x < model_x + radius) && (map_x > model_x - radius)) && ((map_y < model_y + radius) && (map_y > model_y - radius)))
+                                {
+                                    townname = town.mapname;
+                                    curr_line = "    else if ( MLocation == \"" + townname + "\" )          BuildingPosList.Insert(\"" + group_list[i].pos + "\");";
+                                    full_output.Add(curr_line);
+                                    break;
+                                }
+                            }
                         }
                     }
                 }
@@ -484,5 +524,14 @@ namespace parseXML_DayZ
         {
             viewCityInfo();
         }
+
     }
+
+    ////***********//// NOTES/////
+    // Corner Case = Multi-Ifs in Output after full generation of file (One Model is defined within the radius of 3 towns at once.)
+    // Multi-Unique Models with Same Name and Same Town Creates Else if's that have the same entry conditions.
+    
+
+
+
 }
